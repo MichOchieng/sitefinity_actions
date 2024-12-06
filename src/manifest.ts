@@ -19,19 +19,9 @@ export default defineManifest({
   options_page: 'src/options/index.html',
   action: {
     default_popup: 'src/popup/index.html',
-    default_icon: {
-      16: 'icon16.png',
-      32: 'icon32.png',
-      48: 'icon48.png',
-      128: 'icon128.png',
-    },
+    default_icon: {},
   },
-  icons: {
-    16: 'icon16.png',
-    32: 'icon32.png',
-    48: 'icon48.png',
-    128: 'icon128.png',
-  },
+  icons: {},
   permissions: ['activeTab', 'storage'],
   content_scripts: [
     {
@@ -43,7 +33,7 @@ export default defineManifest({
   ],
   web_accessible_resources: [
     {
-      resources: ['icon16.png', 'icon32.png', 'icon48.png', 'icon128.png'],
+      resources: [],
       matches: [],
     },
   ],
