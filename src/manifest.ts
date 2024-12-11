@@ -19,7 +19,8 @@ export default defineManifest({
   options_page: 'src/options/index.html',
   action: {
     default_popup: 'src/popup/index.html',
-    default_icon: {},
+    default_icon: 'icon.png',
+    // Break this down into 16x 32x 48x and 128x
   },
   icons: {},
   permissions: ['activeTab', 'storage'],
@@ -33,7 +34,8 @@ export default defineManifest({
   ],
   web_accessible_resources: [
     {
-      resources: [],
+      resources: ['icon.png'],
+      // Add 16x 32x 48x and 128x
       matches: [],
     },
   ],

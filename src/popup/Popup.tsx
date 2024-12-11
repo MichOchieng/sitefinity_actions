@@ -8,7 +8,9 @@ export default function Popup(): JSX.Element {
       <div className='grid h-[100px] w-[250px] grid-cols-2 grid-rows-3 gap-4'>
         {/* Heading */}
         <div className='col-span-2 text-center'>
-          <h1 className='font-medium'>Sitefinity Actions</h1>
+          <h1 className='font-bold'>
+            Sitefinity <span className='text-[#7CEC2C]'>Actions</span>
+          </h1>
         </div>
         {/* Button group */}
         <button
@@ -25,6 +27,8 @@ export default function Popup(): JSX.Element {
         >
           Preview
         </button>
+
+        {/* Alert */}
       </div>
     </div>
   );
